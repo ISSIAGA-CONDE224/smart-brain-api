@@ -71,12 +71,6 @@ app.post('/signing',(req, res) =>{
  app.post('/register', (req,res) =>{
 
      const {email,password,name} = req.body;
-
-     //cryptage du mot de passe
-    //  bcrypt.hash(password, null,null, function(error,hash){
-    //       console.log(hash);
-    //  })
-
      database.users.push(
         {
             id : "125",
